@@ -1,6 +1,7 @@
 name: Run all tests
 
 on: [push, pull_request]
+workflow_dispatch:  # ✅ 添加这个，启用手动触发按钮
 
 env:
   PIP: "env PIP_DISABLE_PIP_VERSION_CHECK=1
